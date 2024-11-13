@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "52573047921",
+    "project_id": "fitbeast-finalversion",
+    "storage_bucket": "fitbeast-finalversion.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:52573047921:android:4cc56d163e35022d015fd0",
+        "android_client_info": {
+          "package_name": "com.example.fitbeast_finalversion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeFydfviopsYyIV7Ssfjm1xcps53pXCmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

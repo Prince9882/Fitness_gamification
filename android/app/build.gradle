@@ -1,0 +1,50 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace = "com.example.fitbeast_finalversion"
+    compileSdk = 35  // replace with an actual SDK version
+
+    ndkVersion = "23.1.7779620" // replace with your ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.example.fitbeast_finalversion"
+        minSdkVersion 21
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 33  // replace with actual SDK version
+        versionCode 1  // replace with your actual versionCode
+        versionName "1.0"  // replace with your actual versionName
+    }
+
+    buildTypes {
+        release {
+            // Configure the release signing config here.
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.5.0')
+    implementation 'com.google.firebase:firebase-auth'  // add required Firebase libraries
+    implementation 'com.google.firebase:firebase-database'  // example
+}
